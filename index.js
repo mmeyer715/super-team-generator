@@ -10,23 +10,23 @@ function getEmployeeData() {
     {
       type: 'input',
       name: 'name',
-      message: 'Hello Manager, what is your name:',
+      message: 'Hello Manager, enter your name:',
       default: 'Mr. Manager'
     },
     {
       type: 'input',
       name: 'employeeId',
-      message: 'What is your employee id:'
+      message: 'Enter your employee id:'
     },
     {
       type: 'input',
       name: 'email',
-      message: 'What is your email:'
+      message: 'Enter your email:'
     },
     {
       type: 'input',
       name: 'officeNum',
-      message: 'What is your office number:'
+      message: 'Enter your office number:'
     },
     {
       type: 'loop',
@@ -38,80 +38,34 @@ function getEmployeeData() {
               name: 'role',
               message: 'What is this employee\'s role?',
               choices: ['Engineer', 'Intern']
+          },
+          {
+            type: 'input',
+            name: 'name',
+            message: 'Enter your employee\'s name:'
+          },
+          {
+            type: 'input',
+            name: 'employeeId',
+            message: 'Enter your employee\'s id:'
+          },
+          {
+            type: 'input',
+            name: 'email',
+            message: 'Enter your employee\'s email:'
           }
         ]
-    },
-//     {
-//       type: 'loop',
-//       name: 'usage',
-//       message: 'Would you like to add a step for usage?',
-//       questions: [
-//           {
-//               type: 'input',
-//               name: 'value',
-//               message: 'Describe the usage step.'
-//           }
-//         ]
-//     },
-//     {
-//       type: 'loop',
-//       name: 'contributing',
-//       message: 'Would you like to give credit to any contributors?',
-//       questions: [
-//           {
-//               type: 'input',
-//               name: 'value',
-//               message: 'Enter contributors name.'
-//           }
-//         ]
-//     },
-//     {
-//       type: 'loop',
-//       name: 'tests',
-//       message: 'Would you like to add any testing instructions for your project?',
-//       questions: [
-//         {
-//           type: 'input',
-//           name: 'value',
-//           message: 'Please explain and provide examples of the test performed.'
-//         }
-//       ]
-//     },
-//     {
-//       type: 'loop',
-//       name: 'questions',
-//       message: 'Add additioinal contact information for potential questions.',
-//       questions: [
-//         {
-//           type: 'input',
-//           name: 'name',
-//           message: 'Enter contact name.'
-//         },
-//         {
-//           type:'input',
-//           name: 'gitHub',
-//           message: 'Please enter your gitHub link to your profile.'
-//         },
-//         {
-//           type: 'input',
-//           name: 'email',
-//           message: 'Please enter contributors email address'
-//         },
-//       ]
-//     },
-//     {
-//       type: 'loop',
-//       name: 'license',
-//       message: 'Would you like to add a license?',
-//       questions: [
-//         {
-//           type: 'input',
-//           name: 'value',
-//           message: 'Enter license name.'
-//         }
-//       ]
-//     }
+    }
   ])
+  .then((responses) => {
+      if(responses.employees.length === 0){
+          return responses;
+    }
+      else{
+          //TODO: Given employee's role, Then prompt correct question and add to responses
+          return responses;
+    }
+  })
 }
 
 // // writes user information to new file
