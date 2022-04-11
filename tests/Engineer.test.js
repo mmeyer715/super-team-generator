@@ -17,7 +17,7 @@ describe('Engineer', () => {
         const github = new Engineer('Maria', 1, 'test@email.com', 'mmeyer715');
         expect(github.getGithub()).toBe('mmeyer715');
     })
-    test ('getting correct rol', () => {
+    test ('getting correct role', () => {
         const role = new Engineer('Maria', 1, 'test@email.com', 'mmeyer715');
         expect(role.getRole()).toBe('Engineer');
     })

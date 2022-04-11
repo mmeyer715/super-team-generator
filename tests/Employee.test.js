@@ -13,7 +13,7 @@ describe('Employee', () => {
         const email = new Employee('Maria', 1, 'test@email.com');
         expect(email.getEmail()).toBe('test@email.com');
     })
-    test ('getting correct rol', () => {
+    test ('getting correct role', () => {
         const role = new Employee('Maria', 1, 'test@email.com');
         expect(role.getRole()).toBe('Employee');
     })
