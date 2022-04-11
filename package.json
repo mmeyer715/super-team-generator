@@ -22,6 +22,7 @@
   "homepage": "https://github.com/mmeyer715/super-team-generator#readme",
   "dependencies": {
     "inquirer": "^8.2.2",
+    "inquirer-loop": "^0.3.0",
     "jest": "^27.5.1"
   }
 }
