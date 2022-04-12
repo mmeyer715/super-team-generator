@@ -34,12 +34,6 @@ function getEmployeeData() {
       message: 'Would you like to add an employee today?',
       questions: [
           {
-              type: 'list',
-              name: 'role',
-              message: 'What is this employee\'s role?',
-              choices: ['Engineer', 'Intern']
-          },
-          {
             type: 'input',
             name: 'name',
             message: 'Enter your employee\'s name:'
@@ -53,19 +47,28 @@ function getEmployeeData() {
             type: 'input',
             name: 'email',
             message: 'Enter your employee\'s email:'
+          },
+          {
+            type: 'list',
+            name: 'role',
+            message: 'What is this employee\'s role?',
+            choices: ['Engineer', 'Intern']
+          },
+          {
+            type: 'input',
+            name: 'github',
+            message: 'Enter your employee\'s github name:',
+            when: (answers) => answers.role === 'Engineer'
+          },
+          {
+            type: 'input',
+            name: 'school',
+            message: 'Enter your employee\'s school:',
+            when: (answers) => answers.role === 'Intern'
           }
         ]
     }
   ])
-  .then((responses) => {
-      if(responses.employees.length === 0){
-          return responses;
-    }
-      else{
-          //TODO: Given employee's role, Then prompt correct question and add to responses
-          return responses;
-    }
-  })
 }
 
 // // writes user information to new file
