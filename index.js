@@ -1,11 +1,10 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
 inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer));
-const fs = require('fs');
-//const getEmployeeData = require('./utils/getEmployeeData');
+const getEmployeeData = require('./utils/getEmployeeData');
 
 // Collect data for Manager and their employee(s) 
-function getEmployeeData() {
+function promptEmployeeData() {
  return inquirer.prompt([
     {
       type: 'input',
@@ -71,25 +70,10 @@ function getEmployeeData() {
   ])
 }
 
-// // writes user information to new file
-// function writeToFile(fileName, data) {
-
-//   fileName = `${fileName
-//     .toLowerCase()
-//     .split(' ')
-//     .join('')}.md`;
-    
-//   fs.writeFile(fileName, data, err =>
-//   err ? console.log(err) : console.log('Success!')
-//   );
-// }
-
 // initializes app
 async function init() {
-  const data = await getEmployeeData();
-  console.log(data);
-//   const setReadme = generateMarkdown(data);
-//   writeToFile(data.title, setReadme);
+  const data = await promptEmployeeData();
+  getEmployeeData(data);
 }
 
 // Function call to initialize app
