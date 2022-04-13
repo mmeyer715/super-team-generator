@@ -4,10 +4,18 @@
 
 header {
     text-align: center;
-    background-color: lightblue;
     font-size: x-large;
 }
 
 body {
     background-color: whitesmoke;
+}
+
+.detail-rows {
+    background-color: white;
+}
+
+#employee-email {
+    color: blue;
+    font-size: small;
 }

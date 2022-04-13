@@ -29,6 +29,28 @@ const getEmployeeData = (data) => {
 
 // TODO: Interate through employee array, create HTML cards for each employee
 
+// Base example of card to append to #card-holder
+{/* <div class="col l3 m6 s12">
+	<div class="card">
+	  <div class="card-content blue white-text">
+		<span class="row employee-name"></span>
+		<span class="row employee-role"></span>
+	  </div>
+	  <div class="card-action blue lighten-4">
+		<div class="row detail-rows">
+		  <span id="employee-id"></span>
+		</div>
+		<div class="row detail-rows">
+		  <span></span>
+		  <a href="mailto: insertemailhere@xyz.com?subject=Mail from xyz.com" id="employee-email"></a>
+		</div>
+		<div class="row detail-rows">
+		  <span id="office-number"></span>
+		</div>
+	  </div>
+	</div>
+</div> */}
+
 // TODO: Append to HTML
 
 // Exporting file
