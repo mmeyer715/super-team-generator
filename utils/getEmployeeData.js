@@ -4,6 +4,7 @@ const Engineer = require('../lib/Engineer');
 const Intern = require('../lib/Intern');
 const Manager = require('../lib/Manager');
 
+
 // Variables
 const employeeArray = [];
 
@@ -28,6 +29,29 @@ const getEmployeeData = (data) => {
 }
 
 // TODO: Interate through employee array, create HTML cards for each employee
+const createEmployeeCards = () => {
+	for (let i = 0; i < employeeArray.length; i++) {
+		const Cards = `<div class="col l3 m6 s12">
+							<div class="card">
+								<div class="card-content blue white-text">
+								<span class="row employee-name">${employeeArray[0].Manager.name}</span>
+								<span class="row employee-role"></span>
+							</div>
+							<div class="card-action blue lighten-4">
+								<div class="row detail-rows">
+								<span id="employee-id"></span>
+							</div>
+							<div class="row detail-rows">
+								<span></span>
+								<a href="mailto: insertemailhere@xyz.com?subject=Mail from xyz.com" id="employee-email"></a>
+							</div>
+							<div class="row detail-rows">
+								<span id="office-number"></span>
+							</div>
+						</div>`	
+		$('#card_holder').append(Cards);
+	}
+}
 
 // Base example of card to append to #card-holder
 {/* <div class="col l3 m6 s12">
@@ -54,4 +78,4 @@ const getEmployeeData = (data) => {
 // TODO: Append to HTML
 
 // Exporting file
-module.exports = getEmployeeData;
+module.exports = getEmployeeData, createEmployeeCards;
