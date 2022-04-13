@@ -1,5 +1,4 @@
 // Import packages needed
-const Employee = require('../lib/Employee');
 const Engineer = require('../lib/Engineer');
 const Intern = require('../lib/Intern');
 const Manager = require('../lib/Manager');
@@ -25,16 +24,21 @@ const getEmployeeData = (data) => {
             employeeArray.push(intern);
         }
     }
-    console.log(employeeArray);
+	createEmployeeCards();
 }
 
 // TODO: Interate through employee array, create HTML cards for each employee
+
+//TODO: Take index.html as a file var, update with cards, save as a copy in root
 const createEmployeeCards = () => {
+	
 	for (let i = 0; i < employeeArray.length; i++) {
+		// let role = employeeArray[i].getRole();
+		// console.log(role);
 		const Cards = `<div class="col l3 m6 s12">
 							<div class="card">
 								<div class="card-content blue white-text">
-								<span class="row employee-name">${employeeArray[0].Manager.name}</span>
+								<span class="row employee-name">${employeeArray[i].name}</span>
 								<span class="row employee-role"></span>
 							</div>
 							<div class="card-action blue lighten-4">
@@ -46,10 +50,10 @@ const createEmployeeCards = () => {
 								<a href="mailto: insertemailhere@xyz.com?subject=Mail from xyz.com" id="employee-email"></a>
 							</div>
 							<div class="row detail-rows">
-								<span id="office-number"></span>
+								<span id="unique-role-value"></span>
 							</div>
-						</div>`	
-		$('#card_holder').append(Cards);
+						</div>`;
+		$("#card-holder").append("<p>Test</p>");
 	}
 }
 
@@ -78,4 +82,4 @@ const createEmployeeCards = () => {
 // TODO: Append to HTML
 
 // Exporting file
-module.exports = getEmployeeData, createEmployeeCards;
+module.exports = getEmployeeData;
