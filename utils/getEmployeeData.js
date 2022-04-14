@@ -26,14 +26,78 @@ const getEmployeeData = (data) => {
             employeeArray.push(intern);
         }
     }
-	createEmployeeCards();
+	// console.log(employeeArray);
+	createEmployeeCards(employeeArray);
 }
 
 // TODO: Interate through employee array, create HTML cards for each employee
 
 //TODO: Take index.html as a file var, update with cards, save as a copy in root
-const createEmployeeCards = () => {
-	let indexVal = Constants.INDEX_BASE + Constants.INDEX_CARD + Constants.INDEX_END;
+const createEmployeeCards = (teamMemebers) => {
+	const cardList = [];
+	for (let i = 0; i < teamMemebers.length; i++) {
+		if (teamMemebers[i].getRole() === 'Manager') {
+			cardList.push(`<div class="col l3 m6 s12">
+			<div class="card">
+			  <div class="card-content blue white-text">
+			  <span class="row employee-name">${teamMemebers[i].getName()}</span>
+			  <span class="row employee-role">${teamMemebers[i].getRole()}</span>
+			</div>
+			<div class="card-action blue lighten-4">
+			  <div class="row detail-rows">
+			  <span id="employee-id">${teamMemebers[i].getId()}</span>
+			</div>
+			<div class="row detail-rows">
+			  <span></span>
+			  <a href="mailto:${teamMemebers[i].getEmail()}" id="employee-email">${teamMemebers[i].getEmail()}</a>
+			</div>
+			<div class="row detail-rows">
+			  <span id="unique-role-value">${teamMemebers[i].getOfficeNumber()}</span>
+			</div>
+		  </div>`)
+		} else if (teamMemebers[i].getRole() === 'Engineer') {
+			cardList.push(`<div class="col l3 m6 s12">
+			<div class="card">
+			  <div class="card-content blue white-text">
+			  <span class="row employee-name">${teamMemebers[i].getName()}</span>
+			  <span class="row employee-role">${teamMemebers[i].getRole()}</span>
+			</div>
+			<div class="card-action blue lighten-4">
+			  <div class="row detail-rows">
+			  <span id="employee-id">${teamMemebers[i].getId()}</span>
+			</div>
+			<div class="row detail-rows">
+			  <span></span>
+			  <a href="mailto:${teamMemebers[i].getEmail()}" id="employee-email">${teamMemebers[i].getEmail()}</a>
+			</div>
+			<div class="row detail-rows">
+			  <span id="unique-role-value">${teamMemebers[i].getGithub()}</span>
+			</div>
+		  </div>`)
+		} else {
+			cardList.push(`<div class="col l3 m6 s12">
+			<div class="card">
+			  <div class="card-content blue white-text">
+			  <span class="row employee-name">${teamMemebers[i].getName()}</span>
+			  <span class="row employee-role">${teamMemebers[i].getRole()}</span>
+			</div>
+			<div class="card-action blue lighten-4">
+			  <div class="row detail-rows">
+			  <span id="employee-id">${teamMemebers[i].getId()}</span>
+			</div>
+			<div class="row detail-rows">
+			  <span></span>
+			  <a href="mailto:${teamMemebers[i].getEmail()}" id="employee-email">${teamMemebers[i].getEmail()}</a>
+			</div>
+			<div class="row detail-rows">
+			  <span id="unique-role-value">${teamMemebers[i].getSchool()}</span>
+			</div>
+		  </div>`)
+		}
+		// console.log(cardList);
+	};
+	let indexVal = Constants.INDEX_BASE + cardList + Constants.INDEX_END;
+	console.log(indexVal);
 	fs.writeFile('./index.html', indexVal, err => {
 		if (err) {
 		  console.error(err)

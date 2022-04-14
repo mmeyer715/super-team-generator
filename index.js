@@ -73,6 +73,7 @@ function promptEmployeeData() {
 // initializes app
 async function init() {
   const data = await promptEmployeeData();
+  // console.log(data);
   getEmployeeData(data);
 }
 
