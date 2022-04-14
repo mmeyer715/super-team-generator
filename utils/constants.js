@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+const indexHTML = {
+    INDEX_BASE: `<!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
@@ -13,7 +14,9 @@
         Super Team Table Generator
         </header>
         <div class="container">
-            <div class="row" id="card-holder"><div class="col l3 m6 s12">
+            <div class="row" id="card-holder">`,
+    
+    INDEX_CARD: `<div class="col l3 m6 s12">
     <div class="card">
       <div class="card-content blue white-text">
       <span class="row employee-name"></span>
@@ -30,8 +33,13 @@
     <div class="row detail-rows">
       <span id="unique-role-value"></span>
     </div>
-  </div></div>
+  </div>`,
+
+    INDEX_END: `</div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
-</html>
+</html>`
+};
+
+module.exports = indexHTML;
