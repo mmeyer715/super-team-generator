@@ -59,7 +59,7 @@ const createEmployeeCards = () => {
 }
 
 
-// TODO: Append to HTML
+// TODO: write to HTML
 
 // Exporting file
 module.exports = getEmployeeData;
