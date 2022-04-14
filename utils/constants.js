@@ -15,25 +15,6 @@ const indexHTML = {
         </header>
         <div class="container">
             <div class="row" id="card-holder">`,
-    
-    INDEX_CARD: `<div class="col l3 m6 s12">
-    <div class="card">
-      <div class="card-content blue white-text">
-      <span class="row employee-name"></span>
-      <span class="row employee-role"></span>
-    </div>
-    <div class="card-action blue lighten-4">
-      <div class="row detail-rows">
-      <span id="employee-id"></span>
-    </div>
-    <div class="row detail-rows">
-      <span></span>
-      <a href="mailto: insertemailhere@xyz.com?subject=Mail from xyz.com" id="employee-email"></a>
-    </div>
-    <div class="row detail-rows">
-      <span id="unique-role-value"></span>
-    </div>
-  </div>`,
 
     INDEX_END: `</div>
     </div>
