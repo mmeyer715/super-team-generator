@@ -1,77 +1,84 @@
 <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-        <link rel="stylesheet" href="./dist/style.css" />
-        <title>Super Team Table Generator</title>
-      </head>
-      <body>
-        <header class="blue lighten-4">
-        Super Team Table Generator
-        </header>
-        <div class="container">
-            <div class="row" id="card-holder"><div class="col l3 m6 s12">
-			<div class="card">
-			  <div class="card-content blue white-text">
-			  <span class="row employee-name">Mr. Manager</span>
-			  <span class="row employee-role">Manager</span>
-				</div>
-			<div class="card-action blue lighten-4">
-			  <div class="row detail-rows">
-			  <span id="employee-id">n</span>
-			</div>
-			<div class="row detail-rows">
-			  <span>Email:</span>
-			  <a href="mailto:n" id="employee-email">n</a>
-			</div>
-			<div class="row detail-rows">
-			  <span id="unique-role-value">n</span>
-			</div>
-			</div>
-			</div>
-		  </div><div class="col l3 m6 s12">
-			<div class="card">
-			  <div class="card-content blue white-text">
-			  <span class="row employee-name">maria</span>
-			  <span class="row employee-role">Engineer</span>
-			</div>
-			<div class="card-action blue lighten-4">
-			  <div class="row detail-rows">
-			  <span id="employee-id">y</span>
-			</div>
-			<div class="row detail-rows">
-			  <span></span>
-			  <a href="mailto:y" id="employee-email">y</a>
-			</div>
-			<div class="row detail-rows">
-			  <span id="unique-role-value">y</span>
-			</div>
-			</div>
-			</div>
-		  </div><div class="col l3 m6 s12">
-			<div class="card">
-			  <div class="card-content blue white-text">
-			  <span class="row employee-name">Lucas</span>
-			  <span class="row employee-role">Intern</span>
-			</div>
-			<div class="card-action blue lighten-4">
-			  <div class="row detail-rows">
-			  <span id="employee-id">d</span>
-			</div>
-			<div class="row detail-rows">
-			  <span></span>
-			  <a href="mailto:d" id="employee-email">d</a>
-			</div>
-			<div class="row detail-rows">
-			  <span id="unique-role-value">d</span>
-			</div>
-			</div>
-			</div>
-		  </div></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Super Team Table Generator</title>
+  </head>
+  <body>
+    <header class="blue lighten-4">Super Team Table Generator</header>
+    <div class="container">
+      <div class="row" id="card-holder">
+        <div class="col l3 m6 s12">
+          <div class="card z-depth-5">
+            <div class="card-content blue white-text">
+              <span class="row employee-header">Mr. Manager</span>
+              <i class="material-icons">free_breakfast</i>
+              <span class="row employee-header"> Manager</span>
+            </div>
+            <div class="card-action blue lighten-4">
+              <div class="row detail-rows">
+                <span id="employee-id">ID: y</span>
+              </div>
+              <div class="row detail-rows">
+                <span>Email: </span>
+                <a href="mailto:y" id="employee-email">y</a>
+              </div>
+              <div class="row detail-rows">
+                <span id="unique-role-value">Office Number: y</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col l3 m6 s12">
+          <div class="card z-depth-5">
+            <div class="card-content blue white-text">
+              <span class="row employee-header">y</span>
+              <i class="material-icons">build</i>
+              <span class="row employee-header"> Engineer</span>
+            </div>
+            <div class="card-action blue lighten-4">
+              <div class="row detail-rows">
+                <span id="employee-id">ID: y</span>
+              </div>
+              <div class="row detail-rows">
+                <span>Email: </span>
+                <a href="mailto:y" id="employee-email">y</a>
+              </div>
+              <div class="row detail-rows">
+                <span id="unique-role-value">GitHub: y</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col l3 m6 s12">
+          <div class="card z-depth-5">
+            <div class="card-content blue white-text">
+              <span class="row employee-header">y</span>
+              <i class="material-icons">school</i>
+              <span class="row employee-header"> Intern</span>
+            </div>
+            <div class="card-action blue lighten-4">
+              <div class="row detail-rows">
+                <span id="employee-id">ID: y</span>
+              </div>
+              <div class="row detail-rows">
+                <span>Email: </span>
+                <a href="mailto:y" id="employee-email">y</a>
+              </div>
+              <div class="row detail-rows">
+                <span id="unique-role-value">School: y</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
   </body>
 </html>

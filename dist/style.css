@@ -11,6 +11,14 @@ body {
     background-color: whitesmoke;
 }
 
+.employee-header {
+    font-size: x-large;
+}
+
+i {
+    margin-right: 10px;
+}
+
 .detail-rows {
     background-color: white;
 }
