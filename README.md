@@ -34,8 +34,8 @@
   
   ## Functional Workflow
   1. index.js is the primer for the application
-    1. init() simply initializes the app.
-    2. promptEmployeeData() will prompt the managers with question to collect the data
+    i. init() simply initializes the app.
+    ii. promptEmployeeData() will prompt the managers with question to collect the data
   2. getEmployeeData.js is used to manager's inputs and generate an html file.
     1. getEmployeeData() takes employee data and runs it through the correct class based on role
     2. createHtml() takes employee object(s):
