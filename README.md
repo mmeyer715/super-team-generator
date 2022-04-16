@@ -1,7 +1,7 @@
 
   # Super Team Generator
 
-  ![badge](https://img.shields.io/badge/license-to Ill-blue)
+  ![badge](https://img.shields.io/badge/license-toIll-blue)
   ![badge](https://img.shields.io/badge/license-MIT-blueviolet)
   ![badge](https://img.shields.io/badge/license-GNU-yellow)
   
