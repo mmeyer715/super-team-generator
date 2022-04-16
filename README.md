@@ -68,5 +68,3 @@
   ## Questions
   1. Maria Bean: [GITHUB](github.com/mmeyer715)	[EMAIL](mailto:mbean1216@icloud.com)
   2. Lucas Zimmerman: [GITHUB](github.com/dolomiteson)	[EMAIL](mailto:zimmerman.lucas@hotmail.com)
-  
-  
