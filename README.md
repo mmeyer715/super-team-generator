@@ -8,6 +8,11 @@
   
   ## Description
   This application takes the input from the manager. They will input there own information. As well as the information of their team members. Given the employee role, Then there is a unique question to be asked to the manager. Finally, The input is used and written to an html file that can be displayed via browser.
+  
+
+
+https://user-images.githubusercontent.com/95265770/163697870-81a42e5e-b3b8-4d7d-ab5c-8dc318f47236.mp4
+
 
   ## Table of Contents
 
